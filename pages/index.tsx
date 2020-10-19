@@ -4,7 +4,7 @@ import DarkLight from '../components/btn-dark-light';
 import MyHead from '../components/head';
 import { FiArrowRight } from 'react-icons/fi'
 
-
+ 
 export default function index() {
   return (
     <>
