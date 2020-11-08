@@ -9,6 +9,6 @@ export default function MyHead() {
                 href="/image/favicon.ico" />
             <link
                 href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap"
-                rel="stylesheet"></link>
+                rel="stylesheet"></link>           
         </Head>)
 }

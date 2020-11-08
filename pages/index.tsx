@@ -1,10 +1,11 @@
 import React from 'react';
-import { Flex, Image, VStack, Text, Button } from '@chakra-ui/core';
+import { Flex, VStack, Text } from '@chakra-ui/core';
 import DarkLight from '../components/btn-dark-light';
 import MyHead from '../components/head';
+import Logo from '../components/logo';
 import { FiArrowRight } from 'react-icons/fi'
+import BtnCustom from '../components/btn-custom';
 
- 
 export default function index() {
   return (
     <>
@@ -24,7 +25,7 @@ export default function index() {
           ]}
           maxWidth='1100px'
           height={{
-            base: '70%', // < sm
+            base: '70%',   // < sm
             sm: '70%',
             md: '80%',
             lg: '100%'
@@ -40,17 +41,7 @@ export default function index() {
             justifyContent='space-between'
             position='relative'
           >
-            <Image
-              src='/image/logo.svg'
-              maxWidth='240px'
-              maxHeight='74px'
-              width={[
-                '40%',
-                '40%',
-                '40%',
-                '100%'
-              ]}
-            />
+            <Logo src="/image/logo.svg" maxWidth="240px" maxHeight="74px" />
             <VStack
               alignItems='start'
             >
@@ -77,26 +68,17 @@ export default function index() {
                 fontSize={['sm', 'sm', 'md', '24px']}
                 lineHeight={['12px', '12px', '12px', '34px']}>Goiás</Text>
             </VStack>
-            <Button
-              position='absolute'
-              right='0'
-              bottom='0'
+            <BtnCustom
               maxWidth='88px'
               maxHeight='88px'
-              width={['10%', '10%', '12%', '100%']}
-              height={['10%', '10%', '12%', '100%']}
+              right='0'
+              bottom='0'
+              iconType={FiArrowRight}
+              href='/map'
+              colorHover='#96FEFF'
               backgroundColor='#ffd666'
-              borderRadius={['12px', '18px', '26px', '38px']}
-              display='flex'
-              alignItems='center'
-              justifyContent='center'
-              _hover={{
-                background: "#96FEFF",
-                color: "teal.500",
-              }}
-              transition='background-color 0.2s'
-
-            ><FiArrowRight size={26} color='rgba(0, 0, 0, 0.6)' /></Button>
+              iconColor='rgba(0, 0, 0, 0.6)'
+            />
 
           </VStack>
         </Flex>
